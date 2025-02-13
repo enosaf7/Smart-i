@@ -45,9 +45,18 @@ nav {
 }
 
 .nav-links {
-    display: flex;
-    gap: 2rem;
-    list-style: none;
+    display: none; /* Hide links by default */
+    flex-direction: column; /* Stack links vertically */
+    width: 100%; /* Full width */
+    background: white; /* Background for dropdown */
+    position: absolute; /* Positioning for dropdown */
+    top: 60px; /* Below the nav */
+    left: 0; /* Align to the left */
+    z-index: 1000; /* Ensure it appears above other content */
+}
+
+.nav-links.active {
+    display: flex; /* Show links when mobile menu is active */
 }
 
 .nav-links a {
