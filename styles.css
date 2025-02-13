@@ -931,12 +931,12 @@ footer {
         z-index: 1000; /* Ensure it appears above other content */
     }
 
-    .mobile-menu {
-        display: block; /* Show mobile menu icon */
+    .nav-links.active {
+        display: flex; /* Show links when mobile menu is active */
     }
 
-    .mobile-menu.active + .nav-links {
-        display: flex; /* Show links when mobile menu is active */
+    .mobile-menu {
+        display: block; /* Show mobile menu icon */
     }
 
     .nav-links a {
